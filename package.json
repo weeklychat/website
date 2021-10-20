@@ -1,15 +1,16 @@
 {
-  "name": " ",
+  "name": "weekly-dev-chat",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
+  "description": "Weekly Dev Chat Website",
+  "keywords": ["developers", "chat"],
+  "license": "MIT",
   "author": "",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build *.html && npm run moveStatic",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "moveStatic": "cp static/* dist && cp favicon.ico dist"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
