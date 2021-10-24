@@ -1,41 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.scss" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! Weekly Chat website coming soon</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+  <body>
+    <!-- Add your site or application content here -->
+    <nav id="top-nav">
+      <div class="nav-content">
+        <img src="/icon-transparent.png" alt="logo" />
+        <span>Dev Weekly Chat</span>
+      </div>
+    </nav>
+    <section id="main-content">
+      <div class="main-img">
+        <img src="/img/coffee-laptop.jpg" alt="" />
+        <div class="img-attr">
+          Photo by
+          <a href="https://unsplash.com/@cwmonty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Chris Montgomery</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/zoom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+      <div class="main-desc">
+        <h2>Details</h2>
+        <p>
+          A casual virtual weekly chat that open to everyone and anyone. A place to ask questions, hear different view
+          points, and, most importantly, get to know your fellow participants.
+        </p>
+        <p>
+          Every week there is a new initial software development topic posted on Dev Edmonton Slack to get the
+          discussion started:
+        </p>
+        <p>TODO - Link to join the slack...</p>
+        <p>
+          Sometimes we discus the initial topic the entire chat, other times the topic changes several times through the
+          natural flow of the conversation. If you have a initial topic suggestion please post it to the
+          #meetup-weekly-chat channel
+        </p>
+        <p>
+          Please contact me if you have any suggestions to improve the chat or have any trouble connecting. Hope to see
+          you at the chat.
+        </p>
+        <p>
+          P.S. - Zoom link for chat is under the Online Event section of this Meetup event and is visible once you
+          register. The Zoom link is also posted on the Dev Edmonton Slack.
+        </p>
+      </div>
+    </section>
+    <script type="module" src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script type="module" src="js/plugins.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
