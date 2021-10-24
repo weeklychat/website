@@ -60,6 +60,8 @@ body {
 
     > img {
       width: 560px;
+      height: 420px;
+      object-fit: cover;
       max-width: 100%;
       border-radius: 4px;
       box-shadow: $box-shadow;
@@ -77,6 +79,10 @@ body {
 
   @media screen and (max-width: $phone) {
     margin-top: 0;
+    
+    .main-img > img {
+      height: 320px;
+    }
   }
 }
 
