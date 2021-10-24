@@ -2,7 +2,10 @@
   "name": "weekly-dev-chat",
   "version": "0.0.1",
   "description": "Weekly Dev Chat Website",
-  "keywords": ["developers", "chat"],
+  "keywords": [
+    "developers",
+    "chat"
+  ],
   "license": "MIT",
   "author": "",
   "scripts": {
@@ -13,6 +16,10 @@
     "moveStatic": "cp static/* dist && cp favicon.ico dist"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+    "@parcel/packager-raw-url": "^2.0.0",
+    "@parcel/transformer-webmanifest": "^2.0.0",
+    "@parcel/transformer-sass": "^2.0.0",
+    "parcel": "^2.0.0"
+  },
+  "dependencies": {}
 }
