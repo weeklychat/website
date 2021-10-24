@@ -3,13 +3,14 @@ $primary: #3ca0f0;
 $light-blue: #daedfb;
 $dark-blue: #07004d;
 
-$text-dark: rgba(7, 0, 77, 0.87);
-$text-dark-med: rgba(7, 0, 77, 0.6);
-$text-dark-disabled: rgba(7, 0, 77, 0.38);
+// text colors
+$text-dark: rgb(7 0 77 / 87%);
+$text-dark-med: rgb(7 0 77 / 60%);
+$text-dark-disabled: rgb(7 0 77 / 38%);
 
 // breakpoints
 $phone: 576px;
 $tablet: 768px;
 
 // box shadows
-$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;

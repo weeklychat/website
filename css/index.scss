@@ -1,4 +1,4 @@
-@import "/css/global.scss";
+@import "/css/global";
 
 body {
   background-color: $light-blue;
@@ -79,7 +79,7 @@ body {
 
   @media screen and (max-width: $phone) {
     margin-top: 0;
-    
+
     .main-img > img {
       height: 320px;
     }

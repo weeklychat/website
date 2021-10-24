@@ -1,13 +1,14 @@
 @import "/css/main.css";
-@import "/css/variables.scss";
+@import "/css/variables";
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   color: $text-dark;
 }
 
 a {
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }

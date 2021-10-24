@@ -9,17 +9,23 @@
   "license": "MIT",
   "author": "",
   "scripts": {
-    "build": "parcel build *.html && npm run moveStatic",
+    "build": "npm run test && parcel build *.html && npm run moveStatic",
     "dev": "parcel index.html --open",
     "start": "npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "moveStatic": "cp static/* dist && cp favicon.ico dist"
+    "test": "npm run lint-css",
+    "moveStatic": "cp static/* dist && cp favicon.ico dist",
+    "lint-css": "stylelint \"**/*.{css,scss}\""
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.0.0",
-    "@parcel/transformer-webmanifest": "^2.0.0",
     "@parcel/transformer-sass": "^2.0.0",
-    "parcel": "^2.0.0"
+    "@parcel/transformer-webmanifest": "^2.0.0",
+    "parcel": "^2.0.0",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "stylelint": "^14.0.0",
+    "stylelint-config-standard": "^23.0.0",
+    "stylelint-config-standard-scss": "^2.0.0"
   },
   "dependencies": {}
 }
