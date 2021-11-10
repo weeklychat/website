@@ -1,21 +1,13 @@
 #!/bin/bash
 set -e
 
-# chmod -R g+rw /opt/buildhome/repo
+# Script to update the Netlify buildbot user to have the same
+# UID and GID as the host running the Docker container.
+#
+#  https://github.com/boxboat/fixuid
+#
+echo "Updating container user IDs to be the same as the host.  This can take a minute or two..."
+eval $( fixuid -q )
+echo "Done."
 
-# $usermod -u 1000 buildbot
-
-#chown -R buildbot:buildbot /opt/buildhome/repo
-
-# rm /var/log/lastlog /var/log/faillog && \
-#   ln -s /dev/null /var/log/lastlog && \
-#   ln -s /dev/null /var/log/faillog && \
-#   usermod -u 1000 buildbot && \
-#   rm /var/log/lastlog /var/log/faillog && \
-#   touch /var/log/lastlog && \
-#   touch /var/log/faillog
- 
-# gosu
-
-# exec "$@"
 exec "$@"

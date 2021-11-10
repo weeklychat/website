@@ -2,13 +2,10 @@ version: '3.8'
 services:
   app:
     build: .
-    command: /opt/build-bin/build npm run dev
+    user: ${FIXUID}:${FIXGID}
+    command: /opt/build-bin/build npm run dev 
     entrypoint: /opt/buildhome/repo/docker-entrypoint.sh
     ports:
-      - "1234:1234"
+      - "1234:1234" # Parsel port.
     volumes:
       - .:/opt/buildhome/repo
-      #- node_modules_data:/opt/buildhome/repo/node_modules
-
-#volumes:
-  #node_modules_data:
