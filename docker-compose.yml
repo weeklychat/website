@@ -2,13 +2,13 @@ version: '3.8'
 services:
   app:
     build: .
-    command: npm run dev
-    entrypoint: /app/docker-entrypoint.sh
+    command: /opt/build-bin/build npm run dev
+    entrypoint: /opt/buildhome/repo/docker-entrypoint.sh
     ports:
       - "1234:1234" # NPM Parcel port.
     volumes:
-      - .:/app
-      - node_modules_data:/app/node_modules
+      - .:/opt/buildhome/repo
+      #- node_modules_data:/opt/buildhome/repo/node_modules
 
-volumes:
-  node_modules_data:
+#volumes:
+  #node_modules_data:
