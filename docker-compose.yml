@@ -5,7 +5,7 @@ services:
     command: /opt/build-bin/build npm run dev
     entrypoint: /opt/buildhome/repo/docker-entrypoint.sh
     ports:
-      - "1234:1234" # NPM Parcel port.
+      - "1234:1234"
     volumes:
       - .:/opt/buildhome/repo
       #- node_modules_data:/opt/buildhome/repo/node_modules
